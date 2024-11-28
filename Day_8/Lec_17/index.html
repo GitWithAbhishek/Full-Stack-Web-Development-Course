@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Class Selector */
+        .red{
+            color: red;
+        }
+        /* ID Selector */
+        #green{
+            color: green;
+        }
+        /* Child Selector */
+        div > span{
+            color: aqua;
+        } 
+        /* Descendent Selector - Div Ke Andar H1 Hona Chaiye Chaye Khai Bhi Ho Kitna Bhi Andar Ho */
+        div h1{
+            color: burlywood;
+        }
+        /*Universal Selector */
+        *{
+            margin: 10;
+        }
+        /* Pseodu Selector */
+        a:visited{
+            color: coral;
+        } 
+        a:link{
+            color: red;
+        }
+        a:active{
+            background: blue;
+        }
+        a:hover{
+            background: rgb(9, 243, 107);
+        }
+        p:first-child{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        <p>Hello This Is Red Class</p>
+    </div>
+    <div id="green">
+        <p>Hello This Is Green ID</p>
+    </div>
+    <div>
+        <span>Hello This Is Span Under The Div</span>
+    </div>
+    <div>
+        <article>
+            <h1>This Is Descedent Selector</h1>
+        </article>
+    </div>
+    <div>
+        <a href="https://www.google.com">GOOGLE Boyy</a>
+    </div>
+    <div class="pseudo_selector">
+        <p>I Am The First Child</p>
+        <p>I Am The Second Child</p>
+    </div>
+</body>
+</html>
