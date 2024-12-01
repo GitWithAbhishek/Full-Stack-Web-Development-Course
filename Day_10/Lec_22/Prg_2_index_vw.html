@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimenssion Setup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 4px solid black;
+            width: 100vw;
+            background: aqua;
+        }
+        .centerbox{
+            margin: auto;
+            box-sizing: border-box;
+            border: 4px solid red;
+            width: 70vw;
+            background: aqua;
+        }
+        .container{
+            /*50 px is top and bottom margin and left right margin is auto*/
+            margin: 50px auto;
+            box-sizing: border-box;
+            border: 4px solid red;
+            width: 70vw;
+            height: 80vh;
+            background: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>vw Is Used To Setup Responsive Size Dimensions </p>
+    <div class="box">This Is A Box</div>
+    <p>Now We Setup The Div In Center With The Help Of Margin auto because it make the margin equal from both the side i.e 15-15vw and we take the div(block) of width of 70vw</p>
+    <div class="centerbox">Hello Guys This is Abhishek From GitWithAbhishek</div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia unde excepturi sint qui, odio libero cupiditate nam in doloremque animi obcaecati architecto iste magnam labore quibusdam quae, exercitationem explicabo?</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* The Specificty Of This Selector Is 1 */
+h1{
+    color: aqua;
+}
+/* The Specificty Of This Selector Is 10 */
+h1.hyellow{
+    color: yellow;
+}
+/* The Specificty Of This Selector Is 10 */
+.hred{
+    color: red;
+}
+/* The Specificty Of This Selector Is 10 */
+.hgreen{
+    color: green;
+}
+/* The Specificty Of This Selector Is 10 */
+/*Attribute Selector*/
+[data-x=a]{
+    background: orange;
+}
+p{
+    color: brown;
+}
+/* The Specificty Of This Selector Is 10 */
+.pyellow{
+    color: yellow;
+}
+/* The Specificty Of This Selector Is 10 */
+.pred{
+    color: red !important;
+}
+/* The Specificty Of This Selector Is 1+10=11 */
+.pgreen{
+    color: green;
+}
