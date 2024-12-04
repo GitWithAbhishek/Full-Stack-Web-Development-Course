@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables In CSS</title>
+    <style>
+        :root {
+            --bgcolor: yellow;
+            --bgcolor2: red;
+            --textcolor: green;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Navbar {
+            background: var(--bgcolor);
+            color: var(--textcolor);
+            width: 100vw;
+            height: 33vh;
+        }
+
+        .main {
+            background: var(--bgcolor2);
+            color: var(--textcolor);
+            width: 100vw;
+            height: 33vh;
+        }
+
+        .footer {
+            /*In Case --bgcolor Var Is not exist Then Blue Color Will Applied Automayically*/
+            background: var(--bgcolor, rgb(74, 172, 204));
+            color: var(--textcolor);
+            width: 100vw;
+            height: 33vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Navbar">Navbar</div>
+    <div class="main">Body Of The Website</div>
+    <div class="footer">Footer Of The Website</div>
+</body>
+
+</html>
