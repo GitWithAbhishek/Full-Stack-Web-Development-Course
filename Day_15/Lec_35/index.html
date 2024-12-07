@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selector</title>
+    <style>
+        .box:nth-child(2){
+            background-color: lightcoral;
+        }
+        .box::first-line{
+            color: yellowgreen;
+        }
+        .boxes *{
+            font-style: italic;
+        }
+        .box:nth-child(odd){
+            font-size: large;
+        }
+        /*Apply Dynamic Content Before The Main Box*/
+        .boxes::before{
+            content:  "Aman Bhai Ki To Maje Maje";
+        }
+        /*Apply Dynamic Content After The Main Box*/
+        .boxes::after{
+            content:  "Aman Bhai Ki To Maje Maje";
+        }
+        /*When You Select The Content Through The Mouse Properties Will Showcase Their Effect*/
+        ::selection{
+            color: aqua;
+        }
+        input::placeholder{
+            color: rgb(178, 89, 16);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, earum?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore eveniet asperiores, facilis excepturi ex!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae deserunt culpa perferendis qui impedit ipsam debitis aspernatur a illo totam nemo voluptates dolor, excepturi ratione quidem laboriosam cum sunt eum et optio quam nostrum blanditiis aliquid. Architecto tempore necessitatibus blanditiis facilis possimus libero eum? Vero nostrum nihil aperiam illo blanditiis voluptate? Error consectetur ad deleniti sint est architecto non similique eius inventore, beatae quod harum unde impedit vitae eaque sapiente alias enim earum soluta explicabo nobis quaerat? Omnis cupiditate, perspiciatis qui unde, veritatis praesentium quia ipsam ducimus sed blanditiis dolorum sequi optio ipsum. Nulla deleniti excepturi totam deserunt ipsum!</div>
+    </div>
+    <label for="Text">Full Name</label>
+    <input type="text" id="Text" placeholder="Enter your Name Here">
+</body>
+</html>
