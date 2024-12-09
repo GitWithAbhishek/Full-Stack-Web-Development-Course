@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [Phela_Col]100px [Dusra_Col]150px;
+            grid-template-rows: [Phela_Row]100px [Dusra_Row]100px [Tisra_Row]100px;
+        }
+        .item{
+            border: 2px solid red;
+        }
+        .item-1{
+            border: 2px solid yellow;
+            grid-row:Phela_Row/Dusra_Row ;
+            grid-column: Phela_Col/Dusra_Col;
+        }
+        .item-4{
+            border: 2px solid yellow;
+            grid-row:Phela_Row/Dusra_Row ;
+            grid-column: Phela_Col/Dusra_Col;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
