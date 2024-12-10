@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 50vh;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+            background-color: beige;
+            /*Used For Rotation*/
+            /*transform: rotate(60deg);*/
+            /*transform: rotateX(30deg);*/
+            /*transform: rotateY(50deg);*/
+            /*transform: rotateZ(30deg);*/
+
+            /*Scale Used For Increasing The Length*/
+            /*transform: scale(1.5);*/
+            /* transform: scaleX(1.5);*/
+            /*transform: scaleY(1.5); */
+            /*transform: scale3d(1.5);*/
+
+            /*Skew Is Used To Make Rhombus Shape*/
+            /*transform: skew(70deg);*/
+            /*transform: skewX(15deg);*/
+            /*transform: skewY(20deg);*/
+
+            /*Translate Is Used To Shift The Object According To Its Size*/
+            /*transform: translate(100%);*/
+            /*transform: translateX(100%);*/
+            /*transform: translateY(100%);*/
+
+            /*Applying Two Or More Transform Property At The Same Time*/
+            /*transform: rotateZ(30deg) translateX(50%) skew(20deg);*/
+
+            /*Origin IS Used To Change The Center Of The Object*/
+            /*It Point In The Center Of The Object*/
+            /*transform-origin:-50% -50%;*/
+
+
+            /*Use Case Of The Origin Property*/
+            transform-origin: -25% -25%;
+            transform: rotatez(40deg);
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
