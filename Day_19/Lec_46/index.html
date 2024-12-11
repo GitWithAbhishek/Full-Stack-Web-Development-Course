@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 50vh;
+            background-color: greenyellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            animation:GitWithAbhishek_Ka_Animation ;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            /* It Is Very Rarely Used By The Developers */
+            animation-fill-mode:backwards;
+
+
+        }
+
+        @keyframes GitWithAbhishek_Ka_Animation {
+            from{
+                font-size: 35px;
+            }
+            to{
+                
+                font-size: 80px;
+                transform: translateX(200px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">😇</div>
+    </div>
+</body>
+</html>
