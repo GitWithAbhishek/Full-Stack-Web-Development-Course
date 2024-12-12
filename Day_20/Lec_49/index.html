@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        img {
+            width: 400px;
+            height: 500px;
+            
+            /*It Automatically Fit The Image By Cutting It Automatically Without Mantaining Any Type Of The Ratio*/
+            /* object-fit: cover;  */
+
+            /*It Do Not Cut The Image But It Maintain The Ratio Of The Image In The Fixed Box Size*/
+            /* object-fit: contain; */
+
+            /*It Is Used To Fill The Image In The Provided Box Completelty Without Making Any Ratio */
+            /* object-fit:fill; */
+
+            /*We Can Apply The Object fit Cover Property By Defining What Portion The Image Can We Cut */
+            /* object-fit: cover;
+            object-position:top right; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1675/1715415371675-i" alt="Image">
+    </div>
+</body>
+
+</html>
