@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball_Bouncing_Exercise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(81, 255, 0);
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 30px;
+            font-size: 50px;
+            animation: Ball-Bouncing-Animation-1 3s linear infinite, Ball-Bouncing-Animation-2 1s ease-out infinite alternate;
+            
+
+        }
+
+        @keyframes Ball-Bouncing-Animation-1 {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+
+        }
+
+        @keyframes Ball-Bouncing-Animation-2 {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">🏀</div>
+    </div>
+
+</body>
+
+</html>
