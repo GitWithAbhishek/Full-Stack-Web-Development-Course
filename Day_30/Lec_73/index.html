@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            display: flex;
+            border: 2px solid black;
+            width: 1000px;
+        }
+        .image img{
+            width: auto;
+            height: 150px;
+        }
+        .image{
+            
+            position: relative;
+        }
+        .text h1 p{
+            padding: 4px 0px;
+        }
+        .capsule{
+            position: absolute;
+            z-index: 10;
+            bottom: 4px;
+            right: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVLIUfmrskNAha1yNa-7ygsEeNEA"
+                    alt="image">
+                    <div class="capsule">32:09</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Web Development</h1>
+                <p>CodeWithHArry . 727k 2 months</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
