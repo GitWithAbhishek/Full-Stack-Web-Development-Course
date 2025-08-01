@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function onload(src){
+            return new promise((resolve, reject)=>{
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = () => resolve('Script loaded successfully');
+                script.onerror = () => reject(new Error('Script loading failed'));      
+                document.body.appendChild(script);
+            });
+        loadScript("myScript.js")
+        .then((message) => {
+            alert(message); // Shows: Script loaded successfully!
+        })
+        .catch((error) => {
+            console.error(error.message); // Logs error if script fails
+        }); 
+
+
+        }
+    </script>
+</body>
+</html>
